@@ -66,10 +66,6 @@ publishing {
             def repository = version.endsWith('-SNAPSHOT') ? 'snapshots' : 'releases'
             url = "http://repo.choco.wtf/$repository"
 
-            credentials {
-                username property('mavenUsername')
-                password property('mavenAccessToken')
-            }
         }
     }
 }
